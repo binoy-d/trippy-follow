@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(20);
+  background(100);
   dragSegment(0, mouseX, mouseY);
   for( var i=0; i<x.length-1; i++) {
     dragSegment(i+1, x[i], y[i]);
@@ -21,7 +21,7 @@ function draw() {
 }
 
 function dragSegment(i, xin, yin) {
-  background(20);
+  background(100);
 
   dx = mouseX - x;
   dy = mouseY - y;
