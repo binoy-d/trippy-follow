@@ -3,7 +3,7 @@ var segLength = 80,
 var running = false;
 var nib = 0;
 function setup() {
-  createCanvas(710, 400);
+  createCanvas(720, 480);
   strokeWeight(20);
   stroke(255, 100);
 
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(100);
+  background(0);
   dragSegment(0, mouseX, mouseY);
   for( var i=0; i<x.length-1; i++) {
     dragSegment(i+1, x[i], y[i]);
@@ -22,7 +22,7 @@ function draw() {
 }
 
 function dragSegment(i, xin, yin) {
-  background(100);
+  background(0);
 
   dx = mouseX - x;
   dy = mouseY - y;
