@@ -48,11 +48,17 @@ function segment(x, y, a) {
   line(0, 0, segLength, 0);
   pop();
 }
+<<<<<<< HEAD
 function mousePressed(){
   console.log("yoo");
+=======
+function mouseClicked(){
+  
+>>>>>>> edf732449c8298c8c9eaa9268b628cb127ddc875
   if(!running){
     push();
     translate(x,y);
+    fill(255);
     ellipse(0,0,nib,nib);
     nib++;
     if(nib>=100){
