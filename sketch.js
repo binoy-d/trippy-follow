@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(20);
   dragSegment(0, mouseX, mouseY);
   for( var i=0; i<x.length-1; i++) {
     dragSegment(i+1, x[i], y[i]);
