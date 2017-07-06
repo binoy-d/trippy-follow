@@ -21,7 +21,7 @@ function draw() {
 }
 
 function dragSegment(i, xin, yin) {
-  background(0);
+  background(20);
 
   dx = mouseX - x;
   dy = mouseY - y;
