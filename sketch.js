@@ -48,7 +48,7 @@ function segment(x, y, a) {
   line(0, 0, segLength, 0);
   pop();
 }
-function mouseClicked(){
+function mousePressed(){
   if(!running){
     push();
     translate(x,y);
