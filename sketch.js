@@ -22,7 +22,7 @@ function draw() {
 }
 
 function dragSegment(i, xin, yin) {
-  //background(0);
+background(0);
 
   dx = mouseX - x;
   dy = mouseY - y;
@@ -37,15 +37,24 @@ function dragSegment(i, xin, yin) {
   y = y2 + sin(angle2) * segLength;
 
   segment(x, y, angle1);
-  segment(x2, y2, angle2);
+  dot(x2, y2, angle2);
+	
 }
-
+function dot(x,y,a){
+	push();
+	translate(x,y);
+	rotate(a);
+	ellipse(segLength,0,20,20);
+	pop();
+}
 
 function segment(x, y, a) {
   push();
   translate(x, y);
   rotate(a);
+	
   line(0, 0, segLength, 0);
+	
   pop();
 }
 
