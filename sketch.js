@@ -50,7 +50,7 @@ function segment(x, y, a) {
 }
 
 function mousePressed(){
-  console.log("yoo");
+  console.log(running);
 
   if(!running){
     push();
