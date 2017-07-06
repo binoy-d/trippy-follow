@@ -49,7 +49,7 @@ function segment(x, y, a) {
   pop();
 }
 function mouseClicked(){
-  if(!running){}
+  if(!running){
     push();
     translate(x,y);
     ellipse(0,0,nib,nib);
