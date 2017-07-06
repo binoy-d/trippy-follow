@@ -49,6 +49,7 @@ function segment(x, y, a) {
   pop();
 }
 function mousePressed(){
+  console.log("yoo");
   if(!running){
     push();
     translate(x,y);
