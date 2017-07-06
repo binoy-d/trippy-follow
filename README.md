@@ -1,4 +1,5 @@
-# jsexperiments
+#p5 reaching arm
 
 
-this is just where i mess around with js
+This code is from p5.js examples page. I just wanted to see how github pages worked and see how long update times were and how js would be on there.
+I DID NOT WRITE THE CODE!!!
