@@ -49,9 +49,11 @@ function segment(x, y, a) {
   pop();
 }
 function mouseClicked(){
+  
   if(!running){
     push();
     translate(x,y);
+    fill(255);
     ellipse(0,0,nib,nib);
     nib++;
     if(nib>=100){
