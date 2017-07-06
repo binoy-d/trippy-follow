@@ -57,6 +57,7 @@ function mousePressed(){
     translate(x,y);
     fill(255);
     ellipse(0,0,nib,nib);
+    pop();
     nib++;
     if(nib>=100){
       nib = 0;
