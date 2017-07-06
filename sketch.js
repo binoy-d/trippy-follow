@@ -1,6 +1,7 @@
 var segLength = 80,
   x, y, x2, y2;
-
+var running = false;
+var nib = 0;
 function setup() {
   createCanvas(710, 400);
   strokeWeight(20);
@@ -13,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(100);
   dragSegment(0, mouseX, mouseY);
   for( var i=0; i<x.length-1; i++) {
     dragSegment(i+1, x[i], y[i]);
@@ -21,7 +22,7 @@ function draw() {
 }
 
 function dragSegment(i, xin, yin) {
-  background(0);
+  background(100);
 
   dx = mouseX - x;
   dy = mouseY - y;
@@ -39,10 +40,23 @@ function dragSegment(i, xin, yin) {
   segment(x2, y2, angle2);
 }
 
+
 function segment(x, y, a) {
   push();
   translate(x, y);
   rotate(a);
   line(0, 0, segLength, 0);
   pop();
+}
+function mouseClicked(){
+  if(!running){}
+    push();
+    translate(x,y);
+    ellipse(0,0,nib,nib);
+    nib++;
+    if(nib>=100){
+      nib = 0;
+      running = false;
+    }
+  }
 }
